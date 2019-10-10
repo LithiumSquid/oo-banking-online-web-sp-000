@@ -19,7 +19,7 @@ class Transfer
 end
 
 def execute_transaction
-  
+  if @sender.
 end
 
 def reverse_transfer
