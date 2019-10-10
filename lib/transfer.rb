@@ -11,7 +11,9 @@ class Transfer
   end
   
   def valid?
-    if bankaccount.valid? == true
+    
+    
+    if @sender.bank_account.balance >= amount && bankaccount.valid? @@ == true
       return true
     else
       return false
