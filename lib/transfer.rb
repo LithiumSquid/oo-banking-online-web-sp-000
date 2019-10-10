@@ -11,16 +11,15 @@ class Transfer
   end
   
   def valid?
-    
-    
-    if @sender.bank_account.balance >= amount && bankaccount.valid? @@ == true
-      return true
-    else
-      return false
-    end
+  if @sender.valid? == true && @receiver.valid? == true
+    return true
+  else
+    return false
+  end
 end
 
 def execute_transaction
+  
 end
 
 def reverse_transfer
